@@ -7,5 +7,6 @@ module Rails
   end
 end
 
-ActionController::Base.send   :include, MkdWebsite::Helper
-ActionView::Base.send         :include, MkdWebsite::Helper
+ActionController::Base.send   :include, DomainSwitcher::Helper
+ActiveRecord::Base.send       :include, DomainSwitcher::Helper
+ActionView::Base.send         :include, DomainSwitcher::Helper

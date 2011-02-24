@@ -1,10 +1,12 @@
 module DomainSwitcher
   module Helper
     
-    def self.switch(website)
+    def domain
+      Thread.current[:domain_switcher_domain]
     end
     
-    def domain
+    def website
+      Thread.current[:domain_switcher_website]
     end
     
   end

@@ -1,0 +1,11 @@
+= DomainSwitcher
+
+Rack based domain switcher with configuration
+
+* Add a website and a domain object in the context
+* Switch cache namespace
+* Switch cookie domain
+
+== Usage for Rails 2.3:
+
+  config.middleware.use 'DomainSwitcher::Middleware'

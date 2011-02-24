@@ -1,0 +1,22 @@
+website1:
+  name: Website 1
+  default_domain: www.website1.com
+  domains:
+    - www.website1.com:
+      width: 900
+      name: Website 1 override
+    - www.website1-other-domain.com:
+      cookie_domain: www.website1-other-domain.com
+    - www.website1-other-domain-again.com
+    - www.website1-other-domain-again-again.com
+  width: 800
+  bool: true
+  bool2: false
+    
+website2:
+  name: Website2
+  default_domain: www.website2.com
+  domains:
+    - www.website2.com
+    - fr.website2.com
+  lang: fr
